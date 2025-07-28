@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   const txt = sessionStorage.getItem("text");
   if (txt) {
-    document.getElementById("text").value = JSON.parse(txt);
+    text.value = JSON.parse(txt);
   }
   if (document.cookie.includes("consent=true")) {
     cookieTask.style.display = "none";
