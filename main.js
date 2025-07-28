@@ -79,7 +79,9 @@ btn5.addEventListener("click", async () => {
   }
 });
 
+countdown.style.display = "none";
 function count() {
+  countdown.style.display = "flex";
   if (countdown.innerText > 0) {
     countdown.innerText--;
     setTimeout(count, 1000);
